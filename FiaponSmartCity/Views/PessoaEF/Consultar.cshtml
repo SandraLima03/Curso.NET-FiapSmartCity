@@ -1,0 +1,38 @@
+﻿@model FiapSmartCity.Models.PessoaEF
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pessoa EF - Consultar</title>
+</head>
+<body>
+    <h1>Pessoa EF - Consultar</h1>
+    <div class="form-horizontal">
+        <hr />
+
+        <div class="form-group">
+            <label><b>Nome:</b></label>
+            <div class="col-md-10">
+                <span>@Model.NomePessoa</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label><b>Endereço:</b></label>
+            <div class="checkbox">
+                <span>@Model.EnderecoPessoa</span>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <div>
+        <a asp-controller="PessoaEF" asp-action="Index">Voltar</a>
+    </div>
+
+</body>
+</html>
